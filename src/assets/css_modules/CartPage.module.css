@@ -1,0 +1,197 @@
+:root {
+  --background: #fcfcfc;
+  --darker: #2e3532;
+  --primary: #dd3355;
+  --secondary: #f0d3f7;
+  --tertiary: #fbd87f;
+  --accent: #81d2c7;
+  --text: #000000;
+  --text-light: #ffffff;
+}
+
+.table_border {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.table_header {
+  color: var(--darker) !important;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.table_body {
+  color: var(--darker) !important;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn_delete {
+  background-color: var(--darker) !important;
+  color: var(--text-light) !important;
+}
+
+.btn_delete:hover {
+  background-color: var(--primary) !important;
+  color: var(--text-light) !important;
+}
+
+.btn_watch {
+  background-color: var(--darker) !important;
+  color: var(--text-light) !important;
+}
+
+.btn_watch:hover {
+  background-color: var(--accent) !important;
+  color: var(--text-light) !important;
+}
+
+.total_price {
+  flex-direction: row !important;
+  justify-content: end;
+  background-color: white;
+  border: 1px solid var(--darker);
+}
+
+.price {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.btn_payment {
+  background-color: var(--darker);
+  color: var(--background);
+}
+
+.btn_payment:hover {
+  background-color: var(--accent);
+  color: var(--darker);
+}
+
+/* UTILITY */
+.vertical_align {
+  vertical-align: middle;
+}
+
+.mobile_header_row {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  /* TABELLA */
+
+  .table_border {
+    border: none !important;
+    border-radius: 0 !important;
+  }
+  .table_mobile {
+    display: block;
+    width: 100%;
+  }
+
+  /* BORDO AZZURRO ESTERNO TABELLA */
+
+  .table_mobile tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid var(--darker);
+    border-radius: 20px !important;
+    padding: 1rem;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .table_header {
+    display: none;
+  }
+
+  .td_img_container {
+    width: 35% !important;
+    max-width: 50% !important;
+    padding: 1rem;
+  }
+
+  /* NOME FUNKO */
+  .mobile_name {
+    width: 50%;
+    max-width: 50% !important;
+    text-align: left !important;
+    padding-left: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+
+  .table_mobile tbody td {
+    display: flex;
+
+    align-items: center;
+    padding: 0.5rem 0;
+    border: none;
+  }
+
+  .td_promo {
+    max-width: 50% !important;
+    width: 50%;
+  }
+
+  .add_message {
+    display: none;
+  }
+
+  .mobile_header_row {
+    display: flex;
+    margin-bottom: 0.25rem;
+    justify-content: space-between;
+    padding: 0 !important;
+  }
+
+  .price_label_card {
+    max-width: 50% !important;
+    width: 30%;
+  }
+
+  .price_tag {
+    max-width: 30%;
+    width: 30%;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+  /* .table_body {
+    display: none;
+  } */
+
+  /* UTILITY */
+  /* .vertical_align {
+    justify-content: center !important;
+  } */
+
+  /* .td_img_container {
+    display: none;
+  } */
+
+  /* .td_img_container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  } */
+
+  /* .table_mobile tbody {
+    display: block;
+  } */
+
+  /* .mobile_header_row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0 !important;
+  } */
+}

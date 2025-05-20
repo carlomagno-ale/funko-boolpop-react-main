@@ -1,0 +1,73 @@
+:root {
+  --background: #fcfcfc;
+  --darker: #2e3532;
+  --primary: #dd3355;
+  --secondary: #f0d3f7;
+  --tertiary: #fbd87f;
+  --accent: #81d2c7;
+  --text: #000000;
+  --text-light: #ffffff;
+}
+
+.img_container {
+  padding: 0.3rem !important;
+}
+
+/* .table_hover {
+  padding: 0.25rem 0.25rem !important;
+} */
+
+.price_tag_hover {
+  padding: 0 !important;
+}
+
+.btn_dropdown {
+  background-color: var(--darker);
+  color: var(--background);
+}
+
+.btn_dropdown:hover {
+  background-color: var(--tertiary);
+  color: var(--darker);
+}
+
+.btn_del {
+  background-color: var(--darker);
+  color: var(--text-light);
+}
+
+.btn_del:hover {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+.btn_watch {
+  background-color: var(--darker);
+  color: var(--text-light);
+}
+
+.btn_watch:hover {
+  background-color: var(--tertiary);
+  color: var(--darker);
+}
+
+.btn_show {
+  background-color: var(--darker);
+  color: var(--text-light);
+  margin-left: 0 !important;
+}
+
+.btn_show:hover {
+  background-color: var(--tertiary);
+  color: var(--darker);
+}
+
+.btn_proceed {
+  background-color: var(--darker);
+  color: var(--text-light);
+}
+
+.btn_proceed:hover {
+  background-color: var(--accent);
+  color: var(--darker);
+}

@@ -1,0 +1,24 @@
+:root {
+    --background: #fcfcfc;
+    --darker: #2e3532;
+    --primary: #dd3355;
+    --secondary: #f0d3f7;
+    --tertiary: #fbd87f;
+    --tertiary-light: #ffecbc;
+    --accent: #81d2c7;
+    --text: #000000;
+    --text-light: #ffffff;
+}
+
+
+.btn_checkout {
+
+    background-color: var(--darker);
+    color: var(--text-light);
+
+}
+
+.btn_checkout:hover {
+    background-color: var(--tertiary);
+    color: var(--darker);
+}

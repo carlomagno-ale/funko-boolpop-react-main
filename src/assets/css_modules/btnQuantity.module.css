@@ -1,0 +1,29 @@
+.btn_quantity {
+
+    background-color: var(--darker);
+    color: var(--text-light);
+    padding: 1px 10px;
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    width: 40px;
+}
+
+.btn_container {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.btn_item {
+    font-size: 2rem;
+}
+
+.btn_quantity:hover {
+    background-color: var(--tertiary);
+    color: var(--darker);
+}

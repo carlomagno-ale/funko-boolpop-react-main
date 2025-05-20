@@ -1,0 +1,27 @@
+:root {
+  --background: #fcfcfc;
+  --darker: #2e3532;
+  --primary: #dd3355;
+  --secondary: #f0d3f7;
+  --tertiary: #fbd87f;
+  --accent: #81d2c7;
+  --text: #000000;
+  --text-light: #ffffff;
+}
+.price_label {
+  border-radius: 25px;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.btn_add {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.25rem;
+}

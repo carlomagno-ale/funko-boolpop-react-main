@@ -1,0 +1,18 @@
+:root {
+    --background: #fcfcfc;
+    --darker: #2e3532;
+    --primary: #dd3355;
+    --secondary: #f0d3f7;
+    --tertiary: #fbd87f;
+    --accent: #81d2c7;
+    --text: #000000;
+    --text-light: #ffffff;
+}
+
+.spinner_tondo {
+    width: 5rem;
+    height: 5rem;
+    color: var(--accent);
+
+
+}
