@@ -28,7 +28,7 @@ export default function ProductPage() {
     const [displayMsg, setDisplayMsg] = useState(false)
 
     const [suggested, setSuggested] = useState({
-        state: 'laoding'
+        state: 'loading'
     })
 
 
@@ -123,12 +123,18 @@ export default function ProductPage() {
                                     </div>
                                 </div>
                                 <div className="col">
-                                    <label htmlFor="">{funko.result.license.toUpperCase()}</label>
+                                    <label className="mt-3">{funko.result.license.toUpperCase()}</label>
                                     <h2 className="mb-2">{funko.result.name}</h2>
                                     <div className="price_section">
                                         <div>
                                             {funko.result.promotion.length > 0 ? (
                                                 <>
+                                                    <div className="my-1">
+                                                        <span className="badge bg-warning text-dark">
+                                                            {funko.result.promotion[0].name}
+                                                        </span>
+                                                    </div>
+
                                                     <label>
                                                         <span className="text-secondary fs-5">
                                                             <del>{funko.result.price} €</del>

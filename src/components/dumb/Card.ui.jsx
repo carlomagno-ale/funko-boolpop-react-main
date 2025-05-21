@@ -22,8 +22,13 @@ export default function CardUi({ images, name, price, license, promotions, slug 
                                     promotions.length > 0 ?
                                         (
                                             <>
+
+                                                <div className="my-1">
+                                                    <span className="badge bg-warning text-dark">
+                                                        {promotions[0].name}
+                                                    </span>
+                                                </div>
                                                 <label>
-                                                    <div className="fw-bold text-promo">{promotions[0].name}</div>
                                                     <span className="fs-6 text-old-price">
                                                         <del>{price}€</del>
                                                     </span>

@@ -24,6 +24,5 @@
 }
 
 .btn_quantity:hover {
-    background-color: var(--tertiary);
-    color: var(--darker);
+    background-color: var(--primary);
 }

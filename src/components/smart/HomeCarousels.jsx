@@ -60,7 +60,7 @@ export default function HomeCarousels() {
           <div className="container caro-bg">
             {/* piu venduti */}
             <div className="mt-5">
-              <h1 className="fs-3">PIU VENDUTI</h1>
+              <h1 className="fs-3">{'più venduti'.toUpperCase()}</h1>
               <CarouselUi
                 dataLength={products.dataTrans.totalPages}
                 page={pageTrans}
@@ -76,7 +76,7 @@ export default function HomeCarousels() {
             </div>
             {/*  ultimi arrivi */}
             <div className="my-5">
-              <h1 className="fs-3">ULTIMI ARRIVI</h1>
+              <h1 className="fs-3">{'ultimi arrivi'.toUpperCase()}</h1>
               <CarouselUi
                 dataLength={products.dataDate.totalPages}
                 page={pageDate}
