@@ -21,7 +21,7 @@ export default function ProductImages({ images }) {
                         <ul className="list-unstyled">
                             {images.map((dot, i) => (
 
-                                <li key={dot.item_number}>
+                                <li key={dot.id}>
                                     {i == currentIndex ? (
                                         <>
                                             <button className="dot_btn" onMouseEnter={() => setCurrentIndex(i)}>
