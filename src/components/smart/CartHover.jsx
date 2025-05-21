@@ -166,7 +166,7 @@ export default function CartHover({ onClose }) {
                     className={`${styles.btn_proceed} btn fs-5 my-2 my-sm-0`}
                     type="submit"
                   >
-                    Procedi al pagamento
+                    Pagamento
                   </button>
                 </div>
               </div>

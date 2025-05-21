@@ -27,6 +27,10 @@ export default function Header({ setCartOpen }) {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
+
+
+
+
             <div
               className="collapse navbar-collapse position-static"
               id="collapsibleNavId"
@@ -34,25 +38,34 @@ export default function Header({ setCartOpen }) {
               <div className="navbar-nav me-auto mt-2 mt-lg-0">
               </div>
 
-              <Link
-                onClick={() => setCartOpen(true)}
-                className="mx-4 text-white fs-4 position-relative"
-              >
-                {cart.cartItemNumber > 0 ? (
-                  <>
-                    <label className="cart_label" htmlFor="">
-                      {cart.cartItemNumber}
-                    </label>
-                  </>
-                ) : (
-                  <></>
-                )}
-                <i className="bi bi-cart-fill"></i>
-              </Link>
+              <div className="header-actions">
 
-              <SearchBar display={display} setDisplay={setDisplay} />
+
+                <Link
+                  onClick={() => setCartOpen(true)}
+                  className="mx-4 text-white fs-4 position-relative"
+                >
+                  {cart.cartItemNumber > 0 ? (
+                    <>
+                      <label className="cart_label" htmlFor="">
+                        {cart.cartItemNumber}
+                      </label>
+                    </>
+                  ) : (
+                    <></>
+                  )}
+                  <i className="bi bi-cart-fill"></i>
+                </Link>
+
+                <SearchBar display={display} setDisplay={setDisplay} />
+              </div>
             </div>
           </div>
+
+
+
+
+
         </nav>
         <div className={display == true ? "d-block" : "d-none"}>
           <AdvancedSearch />

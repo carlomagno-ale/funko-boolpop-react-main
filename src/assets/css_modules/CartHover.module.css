@@ -27,8 +27,8 @@
 }
 
 .btn_dropdown:hover {
-  background-color: var(--tertiary);
-  color: var(--darker);
+  background-color: var(--primary);
+  color: var(--text-light);
 }
 
 .btn_del {
@@ -47,8 +47,8 @@
 }
 
 .btn_watch:hover {
-  background-color: var(--tertiary);
-  color: var(--darker);
+  background-color: var(--primary);
+  color: var(--text-light);
 }
 
 .btn_show {
@@ -58,8 +58,8 @@
 }
 
 .btn_show:hover {
-  background-color: var(--tertiary);
-  color: var(--darker);
+  background-color: var(--primary);
+  color: var(--text-light);
 }
 
 .btn_proceed {
@@ -68,6 +68,6 @@
 }
 
 .btn_proceed:hover {
-  background-color: var(--accent);
-  color: var(--darker);
+  background-color: var(--primary);
+  color: var(--text-light);
 }

@@ -295,6 +295,26 @@ header {
   }
 }
 
+/*searchbar*/
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.header-actions .mx-4 {
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
+}
+
+.header-actions .searchbar {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 /*cambia gli effetti del bottone con l'icona search*/
 .btn:focus,
 .btn:active {
@@ -331,7 +351,6 @@ header {
 /*FOOTER*/
 
 footer {
-  /*background-color: var(--darker);*/
   background-color: var(--primary);
   overflow: hidden;
   background-image: url("/halftone.svg");
@@ -578,38 +597,58 @@ td {
 
 .search_results_container {
   background-color: var(--background);
-  border-radius: 20px;
   max-height: 400px;
   overflow-y: scroll;
 
   .search_results_body {
     ul {
       list-style: none;
-      padding: 1rem;
+      padding: 0;
+      margin: 0;
 
       li {
-        border: 1px solid var(--primary);
-        border-radius: 20px;
-        padding: 1rem;
-        height: 90px;
-        margin: 1rem 0;
+        border: none;
+        padding: 0.5rem 1rem;
+        height: auto;
+        margin: 0;
+        border-bottom: 1px solid var(--darker);
+
 
         a {
           text-decoration: none;
           color: var(--text);
-          transition-duration: 0.5s;
           font-size: 1rem;
+          display: block;
+          width: 100%;
+          padding: 0;
 
           .search_results_img {
             width: 5%;
           }
         }
       }
+
+      li:hover {
+        background: var(--darker);
+      }
+
+      li:hover a {
+        color: var(--text-light);
+      }
     }
   }
 }
 
-.order_container {
+.search_results_body ul li {
+  transition: background 0.2s;
+}
+
+.search_results_body ul li a {
+  transition: color 0.2s;
+}
+
+
+.search_results_body .order_container {
   max-width: 100%;
   backdrop-filter: blur(3px);
   background-color: white;
@@ -670,7 +709,7 @@ td {
   position: fixed;
   top: 0;
   right: 0;
-  width: 80%;
+  width: 90%;
   height: 100%;
   background: #fff;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
@@ -752,7 +791,7 @@ td {
   }
 
   .cart-offcanvas {
-    width: 60%;
+    width: 70%;
   }
 
   .offcanvas.offcanvas-end {
@@ -806,7 +845,7 @@ td {
   }
 
   .cart-offcanvas {
-    width: 30%;
+    width: 60%;
   }
 
   .offcanvas.offcanvas-end {
@@ -814,9 +853,10 @@ td {
   }
 
   .search_results_container {
-    max-width: 20%;
-    right: 15%;
-    box-shadow: 0px 1px 20px 0px black;
+    min-width: 15%;
+    right: 8.4%;
+    top: 5.1%;
+
   }
 
   .order_container {
@@ -888,4 +928,11 @@ td {
 .custom-input:active {
   border-color: var(--tertiary);
   box-shadow: 0 0 0 2px var(--tertiary);
+}
+
+.venduti-underline {
+  display: inline-block;
+  border-bottom: 4px solid var(--primary);
+  padding-bottom: 4px;
+  font-weight: bold;
 }

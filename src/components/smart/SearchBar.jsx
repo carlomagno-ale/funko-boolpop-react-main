@@ -96,15 +96,18 @@ export default function SearchBar({ page = 1, limit = 10, display }) {
     case 'success':
       return (
         <>
-          <SearchBarUi
-            searchName={searchText.name}
-            searchDescription={searchText.description}
-            searchCategory={searchText.category}
-            onchange={handleChange}
-            handleSearch={handleSearch}
-            message={message}
-          />
-          <p className={message !== '' ? `alert alert-danger position-absolute top-0 left-50` : 'd-none'}>{message}</p>
+          <div className="position-relative">
+            <SearchBarUi
+              searchName={searchText.name}
+              searchDescription={searchText.description}
+              searchCategory={searchText.category}
+              onchange={handleChange}
+              handleSearch={handleSearch}
+              message={message}
+            />
+            <p className={message !== '' ? 'alert alert-danger position-fixed top-20 mt-2 ms-2 z-3' : 'd-none'} style={{ minWidth: 250, maxWidth: 400 }}>{message}</p>
+          </div>
+
           <div className={display == false ? 'd-block' : 'd-none'}>
 
             {filteredFunko.data.results && filteredFunko.data.results.length > 0 && resultsDisplay == true ? (<><SearchResultsUi emptyResearch={emptyResearch} results={filteredFunko.data.results} /></>) : (<></>)}

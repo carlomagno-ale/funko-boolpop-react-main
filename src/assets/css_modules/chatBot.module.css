@@ -14,7 +14,7 @@
 
 .chatbot_button {
     position: fixed;
-    bottom: 80px;
+    bottom: 30px;
     right: 30px;
     padding: 12px 20px;
     font-size: 35px;
@@ -36,7 +36,7 @@
 
 .chatbot_content {
     position: fixed;
-    bottom: 170px;
+    bottom: 120px;
     right: 50px;
     width: 350px;
     height: 450px;
@@ -136,13 +136,12 @@ a {
     padding: 10px 16px;
     border-radius: 20px;
     background-color: var(--darker);
-    color: white;
+    color: var(--text-light);
     border: none;
 }
 
 .btn_chat:hover {
-    background-color: var(--tertiary);
-    color: var(--darker)
+    background-color: var(--primary);
 }
 
 .sent_text {
