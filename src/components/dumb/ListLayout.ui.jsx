@@ -37,7 +37,7 @@ export default function ListLayout({ products }) {
                   {item.promotions.length > 0 ? (
                     <>
                       <div
-                        className={`${styles.text_promo_list} fw-bold text-promo mb-1`}
+                        className={` badge bg-warning text-dark mb-1`}
                       >
                         {item.promotions[0].name}
                       </div>
